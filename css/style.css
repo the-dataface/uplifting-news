@@ -1,0 +1,152 @@
+html { 
+    font-size: 62.5%; 
+} 
+
+body {
+    margin:0;
+    background:#ededed;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#up-header {
+    background:white;
+    position:fixed;
+    top:0;
+    left:0;
+    height:50px;
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:999;
+}
+
+#up-header img {
+    height:40px;
+    transform:translate(40px);
+}
+
+#up-header p {
+    padding:0px 20px 0px 20px;
+    font-size:1.4rem;
+    font-weight:800;
+    color:grey;
+    cursor:pointer;
+}
+
+#all-article-wrapper {
+    margin-top:70px;
+}
+
+.article-wrapper {
+    background:white;
+    width:700px;
+    margin:auto;
+    padding:2rem 2rem 2rem 2rem;
+    margin-bottom:2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0px 3px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+
+.article-wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0px 3px;
+}
+
+.article-wrapper .score-wrapper {
+    height:10rem;
+    width:10rem;
+    position:relative;
+}
+
+.article-wrapper .score-wrapper p {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:4rem;
+    color:black;
+    margin:0;
+    font-weight:800;
+}
+
+.article-wrapper .content-wrapper {
+    width:calc(100% - 150px);
+    margin-left:3rem;
+}
+
+.article-wrapper .content-wrapper p {
+    margin:0;
+    clear:both;
+    float:left;
+}
+
+.article-wrapper .content-wrapper .topic-date-container {
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.article-wrapper .content-wrapper .topic {
+    font-size:1.4rem;
+    color:black;
+    background:white;
+    border:1px solid black;
+    text-transform:uppercase;
+    border-radius:2px;
+    font-weight:800;
+    padding:.2rem .5rem .2rem .5rem;
+    margin-bottom:.5rem;
+}
+
+.article-wrapper .content-wrapper .date {
+    font-size:1.4rem;
+    color:grey;
+}
+
+.article-wrapper .content-wrapper .title {
+    font-size:2.4rem;
+    font-weight:800;
+}
+
+.article-wrapper .content-wrapper .source {
+    font-size:1.6rem;
+    color:grey;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+.article-wrapper .content-wrapper .description {
+    margin-top:.5rem;
+    font-size:1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:200;
+}
+
+#extend-wrapper {
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+#extend-wrapper p {
+    font-size:1.4rem;
+    padding:1rem 1rem 1rem 1rem;
+    display:inline-block;
+    border:1px solid black;
+    font-weight:800;
+    background: white;
+    background: linear-gradient(to right, #d3d3d3 50%, white 50%);
+    background-size: 202% 102%;
+    background-position:right bottom;
+    margin-left:10px;
+    transition:all .3s linear;
+    cursor:pointer;
+}
+
+#extend-wrapper p:hover {
+    background-position:left bottom;
+}
+
