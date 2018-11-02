@@ -8,6 +8,23 @@ body {
     font-family: 'Rajdhani', sans-serif;
 }
 
+.button-hover {
+    background: white;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 202% 102%;
+    background-position:right bottom;
+    transition:all .3s linear;
+    cursor:pointer;
+    display:inline-block;
+    border:1px solid black;
+    font-weight:800;
+}
+
+.button-hover:hover {
+    background-position:left bottom;
+    color:white;
+}
+
 #up-header {
     background:white;
     position:fixed;
@@ -24,7 +41,7 @@ body {
 
 #up-header img {
     height:40px;
-    transform:translate(40px);
+    transform:translateX(10px);
 }
 
 #up-header p {
@@ -32,7 +49,15 @@ body {
     font-size:1.4rem;
     font-weight:800;
     color:grey;
+}
+
+#up-header span {
+    margin-right:10px;
     cursor:pointer;
+}
+
+#up-header span:hover {
+    color:black;
 }
 
 #all-article-wrapper {
@@ -132,21 +157,43 @@ body {
 }
 
 #extend-wrapper p {
+    margin-left:10px;
     font-size:1.4rem;
     padding:1rem 1rem 1rem 1rem;
-    display:inline-block;
-    border:1px solid black;
-    font-weight:800;
-    background: white;
-    background: linear-gradient(to right, #d3d3d3 50%, white 50%);
-    background-size: 202% 102%;
-    background-position:right bottom;
-    margin-left:10px;
-    transition:all .3s linear;
-    cursor:pointer;
 }
 
-#extend-wrapper p:hover {
-    background-position:left bottom;
+#about-section {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:0rem;
+    background:white;
+}
+
+#about-section div {
+    width:500px;
+    font-size:1.8rem;
+    display:none;
+    opacity:0;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+#about-section p {
+    margin-bottom:10px;
+}
+
+#about-section span {
+    font-size:1.4rem;
+    padding:.5rem 1rem .5rem 1rem;
+    margin-top:1rem;
+}
+
+#about-section span i {
+    font-size:1rem;
+    margin-right:.5rem;
 }
 
